@@ -9,7 +9,10 @@ ETL (Extract, Transform, Load) is a fundamental process in data engineering, cru
 
 The primary objective of this project is to build a basic ETL pipeline that:
 
-        1. Extracts real-time weather data from an external API.
+        1. Extracts real-time weather data from an external API using three distinct modules:
+              -  By city name
+              -  By city ID
+              -  By zipcode
         2. Transforms the raw data into a structured format that is easy to analyze.
         3. Loads the processed data into a CSV file for storage and further analysis.
         
@@ -19,14 +22,37 @@ This project aims to provide a hands-on introduction to ETL processes using Pyth
 
 This project is designed as a beginner-friendly guide, focusing on the essential components of an ETL pipeline:
 
- 1. Data Extraction: The project will use Python to connect to a weather data API, fetching real-time data that includes temperature, humidity, and other relevant weather metrics.
- 2. Data Transformation: The extracted data will be cleaned, filtered, and organized into a structured format suitable for analysis. This step will include handling missing values, converting data types, and formatting the data.
- 3. Data Loading: The final step involves storing the transformed data into a CSV file, making it accessible for further analysis or reporting.
+        1. Data Extraction: The project will use Python to connect to a weather data API and fetch real-time data through three different modules:
+              - City Name: Extract weather data by specifying the city name.
+              - City ID: Fetch weather data using a unique city ID.
+              - Zipcode: Obtain weather data based on the zipcode.
+         2. Data Transformation: The extracted data will be cleaned, filtered, and organized into a structured format suitable for analysis. This step will include handling missing  values, converting data types, and formatting the data.
+         3. Data Loading: The final step involves storing the transformed data into a CSV file, making it accessible for further analysis or reporting.
 
 
 This guide will serve as a starting point for aspiring data engineers and analysts, giving them the tools and knowledge needed to tackle more advanced ETL projects in the future.
 
+**Methodology**
 
+
+**Project Execution**
+        Tasks and Milestones
+        Challenges
+
+
+**Results/Findings**
+
+
+**Discussion**
+
+
+**Conclusion**
+
+
+**Recommendations**
+
+
+**Appendices**
 
 
 
