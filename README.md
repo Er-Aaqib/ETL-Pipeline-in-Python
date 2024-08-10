@@ -33,27 +33,35 @@ This project is designed as a beginner-friendly guide, focusing on the essential
 This guide will serve as a starting point for aspiring data engineers and analysts, giving them the tools and knowledge needed to tackle more advanced ETL projects in the future.
 
 **Methodology**
-
+        **SetUp**
+        1. VS CODE installation 
+        2. Download Python Extension
+        3. Openweatherdata API Extraction 
+        4. Define the Extract script 
+        5. Define Transform script
+        6. Define Load script
 
 **Project Execution**
-        Tasks and Milestones
-        Challenges
+        Tasks and Milestones: completion of the milestone 4,5,6.
+        Challenges: correct code, smoothly working code, search the etl challages with python script. 
 
 
-**Results/Findings**
-
+**Results**
+successfully completeion of pipeline in all three milstone.
 
 **Discussion**
-
+update and advancement in the possibility in the project, chatgpt suggestion.
 
 **Conclusion**
-
+take reference from the medium blogs and chatgpt.
 
 **Recommendations**
-
+recommendation like some courses to learn python,
+books, blogs, etc
 
 **Appendices**
-
+use of different fuctions, constraints, characters in the whole script to make easy and understanding programme. 
+like: f-string etc . 
 
 
 
