@@ -1,4 +1,4 @@
-# Project Report: Python ETL Pipeline: From Weather API to Data Insights
+# Python ETL Pipeline: From Weather API to Data Insights
 Creating a basic ETL pipeline in Python to retrieve weather data from an API, transform the data, and save it to a CSV file.
 
 **1. Project Introduction**
