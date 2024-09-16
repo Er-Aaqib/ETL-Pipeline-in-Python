@@ -45,6 +45,91 @@ The key objective of this project is to provide a clear and concise guide for bu
 - **Fetch Weather Data by ZIP Code:**
   - In this module, the pipeline uses a ZIP code to request weather data for the region associated with the code. The API response is then parsed, and relevant weather data is extracted [Built-in API request by ZIP code](https://openweathermap.org/current#zip)).
 
+**4.4. Python Code Implementation**
+
+ In this project, the ETL process involves three main stages: extraction of weather data, transformation of the extracted data, and loading the transformed data into a CSV file. Below is the code implementation for each of these stages, along with a detailed explanation of how the city name and file-saving destination are changed dynamically.
+
+ **1. Fetching Weather Data by City Name**
+
+  *The fetch_weather_data function is responsible for extracting weather data from the OpenWeatherMap API by passing the city name as a parameter. The API key is also included in the request for authentication.*
+
+```
+import requests
+import pandas as pd
+
+def fetch_weather_data (city: str, api_key: str):
+    url = f'http://api.openweathermap.org/data/2.5/weather?q={city}&appid={api_key}&units=metric'
+    response = requests.get(url)
+    if response.status_code == 200:
+        return response.json()
+    else:
+        return None
+
+api_key = '6d52ac0fcbf0e5873b3c5a3c5f2d8583'
+city = 'los angeles'
+weather_data = fetch_weather_data(city, api_key)
+print(weather_data)
+```
+   ***Explanation:***
+
+  - The city parameter allows the user to change the city dynamically for which the weather data is being fetched.
+  - The api_key is necessary to authenticate requests with the OpenWeatherMap API.
+  - The API responds with JSON data, which is used in the next step of transformation.
+
+
+ **2. Transforming Weather Data**
+
+  *The transform_weather_data function processes the raw JSON data fetched from the API, extracting relevant fields like temperature, humidity, weather description, and wind information.*
+
+```
+def transform_weather_data(data: dict):
+    if not data:
+        return None
+
+    weather_info = {
+        'city': data['name'],
+        'temperature': data['main']['temp'],
+        'humidity': data['main']['humidity'],
+        'weather': data['weather'][0]['description'],
+        'wind_speed': data['wind']['speed'],
+        'wind_deg': data['wind']['deg']
+    }
+    return weather_info
+
+transformed_data = transform_weather_data(weather_data)
+print(transformed_data)
+
+```
+  ***Explanation:***
+
+- This function extracts and organizes the data into a structured dictionary format (weather_info) to be saved into a CSV file.
+- You can now see a simplified view of the weather data, which is ready for further use.
+
+
+ **3. Loading Data to CSV**
+
+  *The load_data_to_csv function saves the transformed data into a CSV file. The destination path and file name are passed dynamically.*
+
+```
+def load_data_to_csv(data: dict, file_path: str):
+    df = pd.DataFrame([data])
+    df.to_csv(file_path, index=False)
+
+output_file = '/users/aaqibkhan/python/weather_data/fetch_weather_cityname_LA.csv'
+load_data_to_csv(transformed_data, output_file)
+print(f'Data saved to {output_file}')
+
+```
+***Explanation:***
+
+- The file_path parameter allows the user to specify the desired location and file name for saving the CSV file. In the example, the weather data for Los Angeles is saved to a CSV file with the name fetch_weather_cityname_LA.csv.
+- The file-saving destination (output_file) can be changed by modifying the file_path to any valid file path on your system, and the file name can be customized to reflect the city or other identifying information.
+
+
+
+
+
+
 **5. Challenges Faced**
 
 - **Handling API Rate Limits:**
