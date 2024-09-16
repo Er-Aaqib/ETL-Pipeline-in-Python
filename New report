@@ -1,5 +1,6 @@
 # Project Report: Building a Simple ETL Pipeline in Python
-1. Introduction
+
+**1. Introduction**
 This project, "Building a Simple ETL Pipeline in Python", is designed as a beginner’s guide to demonstrate how to construct an Extract, Transform, Load (ETL) pipeline using Python. ETL pipelines are crucial in data engineering and analytics to extract data from various sources, transform it into the desired format, and load it into target systems for analysis or further processing. This project focuses on fetching weather data from an external API using Python, processing it, and loading it for further analysis.
 
 2. Objectives
