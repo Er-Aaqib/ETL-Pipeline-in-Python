@@ -68,8 +68,9 @@ def fetch_weather_data (city: str, api_key: str):
 api_key = '6d52ac0fcbf0e5873b3c5a3c5f2d8583'
 city = 'los angeles'
 weather_data = fetch_weather_data(city, api_key)
-print(weather_data)
+print(weather_data) 
 ```
+
    ***Explanation:***
 
   - The city parameter allows the user to change the city dynamically for which the weather data is being fetched.
