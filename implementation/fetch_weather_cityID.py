@@ -1,4 +1,4 @@
-#Note: list of city id is downloaded in weather_data folder. 
+#Note: list of city id can be download from the Openweather Map link given in README.md
 
 import requests
 import pandas as pd
