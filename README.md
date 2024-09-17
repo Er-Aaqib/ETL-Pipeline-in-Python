@@ -1,9 +1,5 @@
 
-
-![ETLprojectImage](https://github.com/user-attachments/assets/033ad579-db4e-4d79-aae1-50b5cb5798c5)
-
-
-
+![ETLprojectImage (1)](https://github.com/user-attachments/assets/ed0b38ed-4abc-4663-8d8a-dcf2df621f9a)
 
 
 
