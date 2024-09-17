@@ -10,7 +10,6 @@ def fetch_weather_data (city: str, api_key: str):
     else:
         return None
 
-#Example usage
 api_key = '6d52ac0fcbf0e5873b3c5a3c5f2d8583'
 city = 'los angeles'
 weather_data = fetch_weather_data(city, api_key)
@@ -31,7 +30,6 @@ def transform_weather_data(data: dict):
     }
     return weather_info
 
-# Example usage
 transformed_data = transform_weather_data(weather_data)
 
 
