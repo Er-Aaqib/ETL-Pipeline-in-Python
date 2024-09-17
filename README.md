@@ -1,3 +1,16 @@
+
+
+![ETLprojectImage](https://github.com/user-attachments/assets/033ad579-db4e-4d79-aae1-50b5cb5798c5)
+
+
+
+
+
+
+
+
+
+
 # Python ETL Pipeline: From Weather API to Data Insights
 Creating a ETL pipeline in Python to retrieve weather data from an API, transform the data, and save it to a CSV file.
 
@@ -68,6 +81,7 @@ def fetch_weather_data (city: str, api_key: str):
 api_key = '6d52ac0fcbf0e5873b3c5a3c5f2d8583'
 city = 'los angeles'
 weather_data = fetch_weather_data(city, api_key)
+
 print(weather_data) 
 ```
 
@@ -98,8 +112,8 @@ def transform_weather_data(data: dict):
     return weather_info
 
 transformed_data = transform_weather_data(weather_data)
-print(transformed_data)
 
+print(transformed_data)
 ```
   ***Explanation:***
 
@@ -118,8 +132,9 @@ def load_data_to_csv(data: dict, file_path: str):
 
 output_file = '/users/aaqibkhan/python/weather_data/fetch_weather_cityname_LA.csv'
 load_data_to_csv(transformed_data, output_file)
-print(f'Data saved to {output_file}')
 
+
+print(f'Data saved to {output_file}')
 ```
 ***Explanation:***
 
