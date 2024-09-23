@@ -155,3 +155,11 @@ Possible future improvements to this project include:
 
 - **Visualization:** Adding a data visualization module to generate insights from the fetched weather data, such as temperature trends over time.
 
+** ETL Pipeline Overview**
+
+The following is a visual representation of the ETL (Extract, Transform, Load) pipeline for weather data using Python and the OpenWeatherMap API.
+
+
+![Pipeline](https://github.com/user-attachments/assets/271628a6-cde5-4c27-9d38-a10059ca7223)
+
+
