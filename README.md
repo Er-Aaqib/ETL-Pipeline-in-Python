@@ -1,3 +1,11 @@
+
+
+![ETLpipeline](https://github.com/user-attachments/assets/69197df5-893f-42c1-9fc8-69d042619c08)
+
+<img src="diagrams/Pipeline.png">
+
+
+
 # Python ETL Pipeline: From Weather API to Data Insights
 Creating a ETL pipeline in Python to retrieve weather data from an API, transform the data, and save it to a CSV file.
 
