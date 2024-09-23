@@ -1,10 +1,6 @@
-
-
-![ETLpipeline](https://github.com/user-attachments/assets/69197df5-893f-42c1-9fc8-69d042619c08)
-
-<img src="diagrams/Pipeline.png">
-
-
+<p align="center">
+  <img src="diagrams/ETLpipeline.png" width ="350" height = "310">                                                        
+</p>
 
 # Python ETL Pipeline: From Weather API to Data Insights
 Creating a ETL pipeline in Python to retrieve weather data from an API, transform the data, and save it to a CSV file.
@@ -163,11 +159,5 @@ Possible future improvements to this project include:
 
 - **Visualization:** Adding a data visualization module to generate insights from the fetched weather data, such as temperature trends over time.
 
-**8. ETL Pipeline Overview**
-
-The following is a visual representation of the ETL (Extract, Transform, Load) pipeline for weather data using Python and the OpenWeatherMap API.
-
-
-![Pipeline](https://github.com/user-attachments/assets/271628a6-cde5-4c27-9d38-a10059ca7223)
 
 
